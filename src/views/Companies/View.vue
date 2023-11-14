@@ -29,10 +29,11 @@
                         <td>{{ company.email }}</td>
                         <td>{{ company.revenue }}</td>
                         <td>{{ company.website }}</td>
-                        <td>{{ company.logo }}</td>
+                        <img :src="company.logo" />
+
                         <td>
-                            <RouterLink to="/" class="btn btn-primary">Edit</RouterLink>
-                            <button class="btn btn-danger">Delete</button>                           
+                            <RouterLink to="/" class="btn btn-primary m-1">Edit</RouterLink>
+                            <button class="btn btn-danger m-1">Del</button>                           
                         </td>
                     </tr>
                 </tbody>

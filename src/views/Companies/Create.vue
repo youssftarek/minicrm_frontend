@@ -77,25 +77,12 @@ export default {
                     logo: ''
                     }
                 })
-                .catch(function (error) {
-                    if (error.response) {
-                        if(error.response.status == 422){
-                            alert("Validation error",422);
-                            $this.errorList = error.response.data;
-                        }
+                .catch(error => {
+            this.errorList = error.response.data.errors ;
+             console.log(this.errorList);
+            })
 
-                        // console.log(error.response.data);
-                        // console.log(error.response.status);
-                        // console.log(error.response.headers);
-                    } else if (error.request) {
-  
-                        console.log(error.request);
-                    } else {
 
-                        console.log('Error', error.message);
-                    }
-                    // console.log(error.config);
-  });
         }
     },
 }

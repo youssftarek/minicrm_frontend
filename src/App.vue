@@ -19,10 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/">Link</RouterLink>
-              </li>
-              <li class="nav-item">
+              <li class="nav-item">             
                 <RouterLink class="nav-link" to="/about">About</RouterLink>
               </li>
               <li class="nav-item">
